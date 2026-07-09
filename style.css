@@ -167,39 +167,117 @@ box-shadow:0 20px 40px rgba(0,0,0,.15);
   }
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
+/* ===========================
+   MOBILE RESPONSIVE DESIGN
+=========================== */
 
-  body {
-    overflow-x: hidden;
-  }
+*{
+    box-sizing:border-box;
+}
 
-  .container {
-    width: 95%;
-    padding: 10px;
-  }
+html,body{
+    overflow-x:hidden;
+}
 
-  nav {
-    flex-direction: column;
-    text-align: center;
-  }
+img{
+    max-width:100%;
+    height:auto;
+}
 
-  h1 {
-    font-size: 2rem;
-  }
+/* Tablet */
+@media (max-width:768px){
 
-  p {
-    font-size: 16px;
-  }
+    section{
+        padding:60px 20px;
+    }
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+    .hero h1{
+        font-size:2.4rem;
+        line-height:1.1;
+    }
 
-  .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+    .hero p{
+        font-size:16px;
+    }
+
+    .social-icons{
+        display:flex;
+        justify-content:center;
+        gap:18px;
+        flex-wrap:wrap;
+    }
+
+    .social-icons a{
+        width:60px;
+        height:60px;
+    }
+
+    .contact-card{
+        width:100%;
+        padding:18px;
+    }
+
+    .contact-card h3{
+        font-size:13px;
+    }
+
+    .contact-card p{
+        font-size:15px;
+        word-break:break-word;
+    }
+}
+
+/* Mobile */
+@media (max-width:480px){
+
+    .hero{
+        min-height:100vh;
+        padding:40px 20px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .section-title{
+        font-size:2rem;
+        text-align:center;
+    }
+
+    .social-icons{
+        gap:14px;
+    }
+
+    .social-icons a{
+        width:55px;
+        height:55px;
+    }
+
+    .contact-card{
+        display:flex;
+        align-items:center;
+        gap:15px;
+        border-radius:18px;
+        padding:18px;
+    }
+
+    .contact-icon{
+        width:55px;
+        height:55px;
+        flex-shrink:0;
+    }
+
+    .contact-info{
+        width:100%;
+    }
+
+    .contact-info p{
+        font-size:14px;
+        line-height:1.5;
+    }
+
+    footer{
+        text-align:center;
+        font-size:14px;
+    }
 }
