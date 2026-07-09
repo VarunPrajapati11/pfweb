@@ -43,10 +43,18 @@ box-shadow:0 20px 40px rgba(0,0,0,.15);
     background:#fff;
     border:1px solid #e8e8e8;
     border-radius:24px;
-    padding:30px;
+    padding:20px;
+
     display:flex;
     align-items:center;
     gap:20px;
+
+    width:100%;
+    max-width:100%;
+
+    box-sizing:border-box;
+    overflow:hidden;
+
     box-shadow:0 10px 30px rgba(0,0,0,.06);
     transition:all .35s ease;
 }
@@ -88,6 +96,9 @@ box-shadow:0 20px 40px rgba(0,0,0,.15);
     text-decoration:none;
     font-size:18px;
     line-height:1.6;
+
+    word-break:break-word;
+    overflow-wrap:anywhere;
 }
 
 .contact-card a:hover{
@@ -254,12 +265,17 @@ img{
     }
 
     .contact-card{
-        display:flex;
-        align-items:center;
-        gap:15px;
-        border-radius:18px;
-        padding:18px;
-    }
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    width:100%;
+    max-width:100%;
+
+    padding:18px;
+    border-radius:18px;
+    box-sizing:border-box;
+}
 
     .contact-icon{
         width:55px;
